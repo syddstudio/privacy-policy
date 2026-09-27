@@ -41,62 +41,99 @@
 <p class="lang"><a href="ko/">한국어로 보기 →</a></p>
 <header>
   <h1>Privacy Policy — Poca Craft</h1>
-  <p class="eff">Effective date: 2026-09-25</p>
+  <p class="eff">Effective date: 2026-09-28</p>
 </header>
 
-<p class="lead">Poca Craft (the "app") lets you decorate photocards with 3D cream, pearls, gems, glitter, and charms. <strong>The app does not collect, store, or transmit any personal information to us or to any server.</strong> Your photos and creations stay on your device unless you choose to save or share them yourself.</p>
+<p class="lead">Poca Craft (the "app") lets you decorate photocards with 3D cream, pearls, gems, glitter, and charms. <strong>We, the developer, do not collect, store, or transmit any personal information to our own servers — we don't have any.</strong> Your photos and creations stay on your device unless you choose to save or share them. The app is free and shows <strong>Google AdMob rewarded ads</strong> that you choose to watch; Google processes some device data to serve those ads, as explained in section 2.</p>
 
-<h2>1. Information the App Handles and Why</h2>
+<h2>1. Information the App Handles on Your Device</h2>
 
 <h3>Photos you choose</h3>
-<p>When you tap "Choose photo," the app opens your device's <strong>system photo picker</strong>. The app can access <strong>only the photo you select</strong> — it cannot see the rest of your library, and it does not request storage permission.</p>
+<p>When you tap "Choose photo," the app opens your device's <strong>system photo picker</strong>. The app receives <strong>only the photo you select</strong> and cannot browse the rest of your library through the picker.</p>
 <ul>
   <li>The selected photo is used only to display it on your card and is <strong>processed entirely on your device.</strong></li>
   <li>A copy is kept in the app's private storage so you can reopen the card later. It is <strong>never uploaded</strong> anywhere.</li>
 </ul>
 
-<h3>Your cards (stored on device)</h3>
-<p>Your decorated cards (decoration data, the photo you chose, crop position, and a small preview image) are stored <strong>only in the app's local storage on your device</strong>. They are deleted when you delete a card in the app, clear the app's data, or uninstall the app.</p>
+<h3>Your cards and settings (stored on device)</h3>
+<p>Your decorated cards (decoration data, the photo you chose, crop position, and a small preview image), your settings (sound and vibration on/off), how many card slots you have, which material packs you have unlocked, and your ad-privacy choices are stored <strong>only in the app's local storage on your device</strong>. They are deleted when you delete a card in the app, clear the app's data, or uninstall the app.</p>
 
 <h3>Saving and sharing</h3>
 <ul>
-  <li><strong>Save to Photos</strong> writes the finished image to your device's <code>Pictures/Poca Craft</code> folder. The app does not read other photos in that folder.</li>
+  <li><strong>Save to phone gallery</strong> saves the finished image (or video) to your photo library — on Android in the <code>Pictures/Poca Craft</code> folder, on iPhone in a "Poca Craft" album. The app does not read or upload your other photos.</li>
   <li><strong>Share</strong> opens your device's share sheet. The image goes only to the app or person you choose.</li>
 </ul>
 
 <h3>Error log (stored on device)</h3>
 <p>To help fix problems, the app keeps a short log of recent technical errors (up to 20 entries, no personal content) in local storage. It is <strong>never sent automatically.</strong> If you choose "Send feedback," the recent entries are added to the email draft together with your device model, OS version, app version, and language — you can review or delete them before sending.</p>
 
-<h2>2. Accounts and Registration</h2>
+<h3>Store reviews</h3>
+<p>After you save or share a finished card, the app may ask Google Play or the App Store to show its standard rating prompt. The prompt is shown and handled entirely by the store; the app does not see your rating or review.</p>
+
+<h2>2. Advertising (Google AdMob)</h2>
+<p>The app shows <strong>rewarded ads</strong> from Google AdMob only when you choose to watch one — for example, to add a card slot, unlock a material pack, or save your card as a video. To serve and measure these ads, Google and its partners may collect and process data such as your <strong>advertising ID (Android advertising ID or Apple IDFA), IP address, and device and ad-interaction information</strong>, in accordance with Google's policies.</p>
+<ul>
+  <li><strong>Consent (EEA, UK, Switzerland):</strong> before any ad is requested, the app shows Google's consent message so you can accept or decline personalized ads. You can change your choice later in the app's info screen under "Ad privacy settings."</li>
+  <li><strong>US state privacy laws:</strong> where applicable, you can opt out of the "sale" or "sharing" of your personal information for advertising through the same "Ad privacy settings."</li>
+  <li><strong>iPhone (App Tracking Transparency):</strong> the app asks for permission before your IDFA can be used. If you decline, ads are still shown but are less personalized, and the app works exactly the same.</li>
+  <li>You can also reset your advertising ID or turn off ad personalization in your device settings (Android: Settings → Google → Ads · iPhone: Settings → Privacy &amp; Security → Tracking).</li>
+  <li>Ads in the app are limited to content suitable for teens (maximum ad content rating: T).</li>
+</ul>
+<p>Google Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a><br>How Google uses information from apps that use its services: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
+<p>We do not receive or store any data that identifies you through advertising. We only see aggregate ad reports (for example, how many ads were shown).</p>
+
+<h2>3. Accounts and Registration</h2>
 <p>The app has no sign-up or login and never asks for your name, email address, or phone number.</p>
 
-<h2>3. Permissions</h2>
+<h2>4. Permissions</h2>
+<h3>Android</h3>
 <table>
   <thead><tr><th>Permission</th><th>Purpose</th></tr></thead>
   <tbody>
-    <tr><td>Vibration</td><td>Light haptic feedback when you place or erase decorations</td></tr>
-    <tr><td>Internet</td><td>Included by the app framework. The app itself does not send your data over the network.</td></tr>
+    <tr><td>Vibration</td><td>Light haptic feedback when you place or erase decorations (can be turned off in Settings)</td></tr>
+    <tr><td>Internet / network state</td><td>Load rewarded ads and the consent message</td></tr>
+    <tr><td>Advertising ID (<code>AD_ID</code>, <code>ACCESS_ADSERVICES_AD_ID</code>)</td><td>Added by the Google AdMob SDK — ad serving and frequency capping</td></tr>
+    <tr><td>Ad attribution / topics (<code>ACCESS_ADSERVICES_ATTRIBUTION</code>, <code>ACCESS_ADSERVICES_TOPICS</code>)</td><td>Added by the Google AdMob SDK — ad measurement and interest-based ads</td></tr>
+    <tr><td>Wake lock, foreground service</td><td>Added by the Google AdMob SDK for internal processing</td></tr>
   </tbody>
 </table>
-<p>The app does <strong>not</strong> request access to your photo library, camera, contacts, or location. Photos are provided through the system photo picker only when you choose them.</p>
+<p>On Android the app does <strong>not</strong> request access to your photo library, camera, contacts, or location. Photos are provided through the system photo picker only when you choose them.</p>
+<h3>iPhone</h3>
+<table>
+  <thead><tr><th>Permission</th><th>Purpose</th></tr></thead>
+  <tbody>
+    <tr><td>Photos</td><td>Save your finished card to a "Poca Craft" album. The app does not read or upload your other photos.</td></tr>
+    <tr><td>Tracking (App Tracking Transparency)</td><td>Allow Google AdMob to use your IDFA for more relevant ads. Optional — declining changes nothing else in the app.</td></tr>
+  </tbody>
+</table>
+<p>The app does not request camera, contacts, microphone, or location access.</p>
 
-<h2>4. Photos of Other People</h2>
+<h2>5. Photos of Other People</h2>
 <p>Please respect the rights of others when you use photos of people. Because your cards stay on your device, we do not host, view, or publish them.</p>
 
-<h2>5. Children's Privacy</h2>
-<p>The app does not knowingly collect personal information from anyone, including children, because it does not collect personal information at all.</p>
+<h2>6. Children's Privacy</h2>
+<p>The app is intended for users aged 13 and older and is not directed at children. We do not knowingly collect personal information from children, and ads are limited to teen-appropriate content.</p>
 
-<h2>6. Sharing with Third Parties</h2>
-<p>We do not sell or provide your information to third parties. The app contains no advertising or analytics SDKs.</p>
+<h2>7. Sharing with Third Parties</h2>
+<p>We do not sell or provide your personal information to third parties. Data processing for ad serving is performed by Google as described in section 2.</p>
 
-<h2>7. Your Rights</h2>
-<p>All app data lives on your device. You can delete individual cards in the app, clear the app's data in Android settings, or uninstall the app to remove everything. Images you saved to <code>Pictures/Poca Craft</code> remain in your gallery until you delete them.</p>
+<h2>8. Your Rights</h2>
+<p>All app data lives on your device. You can delete individual cards in the app, clear the app's data in your device settings, or uninstall the app to remove everything. Images you saved to your photo library remain there until you delete them. For advertising data, use "Ad privacy settings" in the app or your device's ad settings (section 2). If you have questions about your privacy rights (including under GDPR or US state laws), contact us below.</p>
 
-<h2>8. Changes to This Policy</h2>
-<p>If the app adds features that change how information is handled (for example, in-app purchases through Google Play), this policy will be updated before that version is released.</p>
+<h2>9. Changes to This Policy</h2>
+<p>If the app adds features that change how information is handled, this policy will be updated before that version is released.</p>
 
-<h2>9. Contact</h2>
+<h2>10. Contact</h2>
 <p>Privacy inquiries: <strong><a href="mailto:support@syddstudio.com">support@syddstudio.com</a></strong></p>
+
+<h2>Revision History</h2>
+<table>
+  <thead><tr><th>Effective date</th><th>Change</th></tr></thead>
+  <tbody>
+    <tr><td>2026-09-28</td><td>Added Google AdMob rewarded ads (consent, US state opt-out, App Tracking Transparency), iPhone version, settings, video saving, and store review prompts</td></tr>
+    <tr><td>2026-09-25</td><td>Initial version</td></tr>
+  </tbody>
+</table>
 
 <footer>© 2026 SYDD Studio</footer>
 </div>
