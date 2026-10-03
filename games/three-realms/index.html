@@ -43,7 +43,7 @@
 <p class="lang"><a href="ko/">한국어</a> · <a href="ja/">日本語</a> · <a href="zh-Hant/">繁體中文</a></p>
 <header>
   <h1>Privacy Policy — Three Realms</h1>
-  <p class="eff">Effective date: September 27, 2026 (first version: August 28, 2026)</p>
+  <p class="eff">Effective date: October 4, 2026 (first version: August 28, 2026)</p>
 </header>
 
 <p class="lead">Three Realms (삼국천하, the "game") respects your privacy. This policy explains what information the game handles and how. In short, <strong>the game does not collect personal information such as your name, contact details, or location.</strong> It is a single-player game with no accounts and no advertising. The only thing that leaves your device is <strong>anonymous play statistics</strong> (Section 2), which you can turn off in Settings at any time.</p>
@@ -58,6 +58,7 @@
     <tr><td>Encyclopedia progress</td><td>Unlock officer biographies and treasure entries you have encountered</td></tr>
     <tr><td>Custom ruler data</td><td>Store a ruler you created yourself</td></tr>
     <tr><td>Settings</td><td>Sound on/off, music and effect volume, language</td></tr>
+    <tr><td>Unlocks</td><td>Remember which optional unlocks you own (a copy — the store keeps the actual purchase record)</td></tr>
   </tbody>
 </table>
 <ul>
@@ -87,7 +88,7 @@
 <ul>
   <li><strong>No accounts.</strong> There is no sign-up, no login, and no user profile.</li>
   <li><strong>No advertising.</strong> The game contains no ad SDK and no advertising identifier is read.</li>
-  <li><strong>No tracking.</strong> The game contains no ad-tracking tool and no third-party tracker that links you across apps or websites. Internet access is used only to send the play statistics described in Section 2. All artwork, music, and sound effects are bundled inside the app and loaded from local files.</li>
+  <li><strong>No tracking.</strong> The game contains no ad-tracking tool and no third-party tracker that links you across apps or websites. Apart from the store's own purchase system (Section 6), internet access is used only to send the play statistics described in Section 2. All artwork, music, and sound effects are bundled inside the app and loaded from local files.</li>
   <li><strong>No cross-device sync.</strong> Saves exist only on the device that created them.</li>
 </ul>
 
@@ -95,7 +96,7 @@
 <table>
   <thead><tr><th>Platform</th><th>Permissions requested</th></tr></thead>
   <tbody>
-    <tr><td>Android</td><td><strong><code>INTERNET</code> and <code>VIBRATE</code>.</strong> <code>INTERNET</code> is used solely to send the play statistics in Section 2; <code>VIBRATE</code> is for haptic effects and cannot read or send any data.</td></tr>
+    <tr><td>Android</td><td><strong><code>INTERNET</code>, <code>VIBRATE</code> and <code>com.android.vending.BILLING</code>.</strong> <code>INTERNET</code> is used solely to send the play statistics in Section 2; <code>VIBRATE</code> is for haptic effects and cannot read or send any data; <code>BILLING</code> lets the game open Google Play's purchase screen for the optional unlocks in Section 6.</td></tr>
     <tr><td>iOS</td><td><strong>None.</strong> The app declares no privacy usage descriptions (no camera, microphone, location, contacts, photos, or tracking).</td></tr>
   </tbody>
 </table>
@@ -105,7 +106,7 @@
 <p>The settings screen can open the app's store page (Google Play or the App Store) so you can leave a review. Selecting it hands the address to the store app or your browser and leaves the game. Those services have their own privacy policies, and we receive nothing from them beyond the aggregate sales and review information the stores show every developer.</p>
 
 <h2>6. Purchases</h2>
-<p>The game is sold as a one-time paid purchase. <strong>Payment is handled entirely by Google Play or the Apple App Store</strong> — the purchase never happens inside the game, and the developer never sees or receives your card number, billing address, or any other payment credential. Refunds and payment records are governed by the store's own policy.</p>
+<p>The game is free to download and play. Additional factions and the Custom Lord mode can be unlocked with optional one-time in-app purchases (no subscriptions, no random items, no consumables). <strong>Payment is handled entirely by Google Play or the Apple App Store</strong> — the developer never sees or receives your card number, billing address, or any other payment credential, and the game sends the developer no purchase information. To open your unlocks, the game only asks the store, on your device, which unlocks your store account owns. Refunds and payment records are governed by the store's own policy.</p>
 <ul>
   <li>Google Play: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
   <li>Apple: <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></li>
@@ -134,10 +135,11 @@
     <tr><td>2026-08-28</td><td>Initial version</td></tr>
     <tr><td>2026-09-20</td><td>Corrected Section 3 on permissions — the Android build declares one permission, <code>VIBRATE</code>, for haptic effects.</td></tr>
     <tr><td>2026-09-27</td><td>Added Section 2 "Play Statistics" (anonymous analytics from version 1.1.0, can be turned off in Settings, off by default in the EEA, UK, and Switzerland), adjusted Sections 3, 4, 8 and 9 accordingly, listed the Android <code>INTERNET</code> permission</td></tr>
+    <tr><td>2026-10-04</td><td>Updated Section 6 for the free version with optional in-app unlocks (version 1.2.0), and Sections 1, 3 and 4 accordingly (unlock record on the device, the store's purchase system, the Android <code>BILLING</code> permission)</td></tr>
   </tbody>
 </table>
 
-<footer>© 2026 Three Realms (SYDD Studio). Last updated: 2026-09-25</footer>
+<footer>© 2026 Three Realms (SYDD Studio). Last updated: 2026-10-04</footer>
 </div>
 </body>
 </html>
