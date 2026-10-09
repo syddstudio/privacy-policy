@@ -73,7 +73,7 @@
   <thead><tr><th>보내는 것</th><th>예</th></tr></thead>
   <tbody>
     <tr><td>게임 진행 이벤트</td><td>판 시작(고른 세력), 일정 턴마다의 진행 요약(턴·도시 수·병력·금), 전투 결과(승패·라운드·자세 횟수), 포로 처분, 승패, 설정 변경</td></tr>
-    <tr><td>앱·기기 정보</td><td>앱 버전, 플랫폼(Android/iOS), 앱 언어, 운영체제 버전, 기기 모델명</td></tr>
+    <tr><td>앱·기기 정보</td><td>앱 버전, 플랫폼(Android/iOS), 앱 언어, 운영체제 버전, 기기 모델명, 설치 경로(버전 1.2.1부터 — Android는 스토어 링크에 붙은 캠페인 표시, iOS는 Apple 검색 광고로 설치했는지와 그 캠페인 번호. iOS는 이를 확인하려고 기기가 받은 일회용 토큰을 Apple에 보냅니다)</td></tr>
     <tr><td>구매 이벤트</td><td>구매 창을 연 것(어느 세력팩을 어디서 열었는지), 구매 결과(산 상품의 종류·묶음 여부·성공/취소/실패). <strong>결제 금액·결제 수단·거래 번호는 보내지 않습니다.</strong> 버전 1.2.1부터</td></tr>
     <tr><td>오류 정보</td><td>게임 안에서 난 오류의 종류·메시지·발생 위치</td></tr>
     <tr><td>설치 식별자</td><td>게임이 스스로 만든 무작위 값 하나. 광고 식별자·기기 고유번호·계정이 아니며 이용자를 알아볼 수 없습니다</td></tr>
@@ -97,7 +97,7 @@
 <table>
   <thead><tr><th>플랫폼</th><th>요구하는 권한</th></tr></thead>
   <tbody>
-    <tr><td>Android</td><td><strong><code>INTERNET</code>, <code>VIBRATE</code>, <code>com.android.vending.BILLING</code> 세 개.</strong> <code>INTERNET</code>은 2절의 플레이 통계 전송에만 쓰고, <code>VIBRATE</code>는 진동 효과용이며 어떤 정보도 읽거나 보낼 수 없습니다. <code>BILLING</code>은 6절의 선택 해금을 위해 Google Play 결제 화면을 여는 데 씁니다.</td></tr>
+    <tr><td>Android</td><td><strong><code>INTERNET</code>, <code>VIBRATE</code>, <code>com.android.vending.BILLING</code>, <code>com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE</code> 네 개.</strong> <code>INTERNET</code>은 2절의 플레이 통계 전송에만 쓰고, <code>VIBRATE</code>는 진동 효과용이며 어떤 정보도 읽거나 보낼 수 없습니다. <code>BILLING</code>은 6절의 선택 해금을 위해 Google Play 결제 화면을 여는 데 씁니다. <code>BIND_GET_INSTALL_REFERRER_SERVICE</code>는 기기 안의 Google Play 앱에 이 게임을 어느 링크로 설치했는지(2절 설치 경로)를 묻는 데만 씁니다(버전 1.2.1부터).</td></tr>
     <tr><td>iOS</td><td><strong>없음.</strong> 카메라·마이크·위치·연락처·사진·추적 등 어떤 개인정보 사용 설명도 선언하지 않습니다.</td></tr>
   </tbody>
 </table>
@@ -144,7 +144,7 @@
     <tr><td>2026-09-20</td><td>3절 권한 문구 정정 — 안드로이드 빌드가 진동 효과용 <code>VIBRATE</code> 권한 하나를 선언한다는 점을 명시.</td></tr>
     <tr><td>2026-09-27</td><td>2절 「플레이 통계」 신설(버전 1.1.0부터 익명 분석 데이터 전송 · 설정에서 해제 · 유럽 경제 지역·영국·스위스는 기본 꺼짐), 3·4·8·9절을 그에 맞게 수정, Android <code>INTERNET</code> 권한 기재</td></tr>
     <tr><td>2026-10-04</td><td>무료 버전·선택 인앱 해금(버전 1.2.0)에 맞춰 6절 수정, 1·3·4절을 그에 맞게 수정(기기의 해금 기록 · 스토어 결제 시스템 · Android <code>BILLING</code> 권한)</td></tr>
-    <tr><td>2026-10-09</td><td>2절 표에 「구매 이벤트」 추가(버전 1.2.1부터 구매 창 열림·구매 결과를 플레이 통계로 전송 — 금액·결제 수단·거래 번호 제외), 6절을 그에 맞게 수정</td></tr>
+    <tr><td>2026-10-09</td><td>2절 표에 「구매 이벤트」 추가(버전 1.2.1부터 구매 창 열림·구매 결과를 플레이 통계로 전송 — 금액·결제 수단·거래 번호 제외), 6절을 그에 맞게 수정. 「앱·기기 정보」에 설치 경로 추가, 3절에 Android 설치 리퍼러 권한 기재(버전 1.2.1부터)</td></tr>
   </tbody>
 </table>
 

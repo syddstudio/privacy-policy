@@ -73,7 +73,7 @@
   <thead><tr><th>傳送的內容</th><th>範例</th></tr></thead>
   <tbody>
     <tr><td>遊戲進程事件</td><td>開始新局（所選君主）、定期進度摘要（回合、城市數、兵力、金錢）、戰鬥結果（勝負、回合數、架勢次數）、俘虜處置、勝敗、設定變更</td></tr>
-    <tr><td>應用程式與裝置資訊</td><td>應用程式版本、平台（Android/iOS）、應用程式語言、作業系統版本、裝置型號名稱</td></tr>
+    <tr><td>應用程式與裝置資訊</td><td>應用程式版本、平台（Android/iOS）、應用程式語言、作業系統版本、裝置型號名稱、安裝來源（自 1.2.1 版起 — Android 為商店連結上附帶的活動標記，iOS 為是否經由 Apple 搜尋廣告安裝及該活動編號。iOS 為此會將裝置取得的一次性權杖傳送給 Apple）</td></tr>
     <tr><td>購買事件</td><td>開啟購買畫面（哪個勢力包、從哪裡開啟）與購買結果（所購商品種類、是否為組合包、成功/取消/失敗）。<strong>不傳送金額、付款方式或交易編號。</strong>自 1.2.1 版起</td></tr>
     <tr><td>錯誤資訊</td><td>遊戲內發生之錯誤的類型、訊息與發生位置</td></tr>
     <tr><td>安裝識別碼</td><td>由本遊戲自行產生的一個隨機值。它不是廣告識別碼、硬體識別碼或帳號，無法識別您的身分</td></tr>
@@ -97,7 +97,7 @@
 <table>
   <thead><tr><th>平台</th><th>要求的權限</th></tr></thead>
   <tbody>
-    <tr><td>Android</td><td><strong><code>INTERNET</code>、<code>VIBRATE</code> 與 <code>com.android.vending.BILLING</code> 三項。</strong><code>INTERNET</code> 僅用於傳送第2條的遊玩統計；<code>VIBRATE</code> 用於觸覺回饋，無法讀取或傳送任何資訊；<code>BILLING</code> 用於為第6條的選購解鎖開啟 Google Play 購買畫面。</td></tr>
+    <tr><td>Android</td><td><strong><code>INTERNET</code>、<code>VIBRATE</code> 與 <code>com.android.vending.BILLING</code> 與 <code>com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE</code> 四項。</strong><code>INTERNET</code> 僅用於傳送第2條的遊玩統計；<code>VIBRATE</code> 用於觸覺回饋，無法讀取或傳送任何資訊；<code>BILLING</code> 用於為第6條的選購解鎖開啟 Google Play 購買畫面；<code>BIND_GET_INSTALL_REFERRER_SERVICE</code> 僅用於向裝置上的 Google Play 應用程式查詢本遊戲是經由哪個連結安裝（第2條的安裝來源，自 1.2.1 版起）。</td></tr>
     <tr><td>iOS</td><td><strong>無。</strong>未宣告任何隱私權用途說明（相機、麥克風、位置、通訊錄、照片或追蹤）。</td></tr>
   </tbody>
 </table>
@@ -136,7 +136,7 @@
     <tr><td>2026-09-20</td><td>初版（內容與英文版 2026-08-28 初版・2026-09-20 修訂相同）</td></tr>
     <tr><td>2026-09-27</td><td>新增第2條「遊玩統計」（自 1.1.0 版起傳送匿名分析資料・可於設定中關閉・歐洲經濟區、英國與瑞士預設關閉），並據此修訂第3、4、8、9條，載明 Android 的 <code>INTERNET</code> 權限</td></tr>
     <tr><td>2026-10-04</td><td>配合免費版與選購 App 內解鎖（1.2.0 版）修訂第6條，並據此修訂第1、3、4條（裝置上的解鎖紀錄、商店付款系統、Android 的 <code>BILLING</code> 權限）</td></tr>
-    <tr><td>2026-10-09</td><td>於第2條表格新增「購買事件」（自 1.2.1 版起將購買畫面開啟與購買結果作為遊玩統計傳送 — 不含金額、付款方式與交易編號），並據此修訂第6條</td></tr>
+    <tr><td>2026-10-09</td><td>於第2條表格新增「購買事件」（自 1.2.1 版起將購買畫面開啟與購買結果作為遊玩統計傳送 — 不含金額、付款方式與交易編號），並據此修訂第6條。於「應用程式與裝置資訊」新增安裝來源，並於第3條載明 Android 安裝來源查詢權限（自 1.2.1 版起）</td></tr>
   </tbody>
 </table>
 
