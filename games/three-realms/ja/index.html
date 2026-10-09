@@ -97,7 +97,7 @@
 <table>
   <thead><tr><th>プラットフォーム</th><th>要求する権限</th></tr></thead>
   <tbody>
-    <tr><td>Android</td><td><strong><code>INTERNET</code>・<code>VIBRATE</code>・<code>com.android.vending.BILLING</code>・<code>com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE</code> の 4 つ。</strong><code>INTERNET</code> は第2条のプレイ統計の送信にのみ使い、<code>VIBRATE</code> は触覚フィードバック用で、いかなる情報も読み取ったり送信したりできません。<code>BILLING</code> は第6条の任意の解放のために Google Play の購入画面を開くのに使います。<code>BIND_GET_INSTALL_REFERRER_SERVICE</code> は端末内の Google Play アプリに、本ゲームをどのリンクからインストールしたか（第2条のインストール経路）を問い合わせるためだけに使います（バージョン 1.2.1 から）。</td></tr>
+    <tr><td>Android</td><td><strong><code>INTERNET</code>・<code>VIBRATE</code>・<code>com.android.vending.BILLING</code>・<code>com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE</code>・<code>android.permission.ACCESS_NETWORK_STATE</code>・<code>com.syddstudio.threerealms.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code> の 6 つ。</strong><code>INTERNET</code> は第2条のプレイ統計の送信にのみ使い、<code>VIBRATE</code> は触覚フィードバック用で、いかなる情報も読み取ったり送信したりできません。<code>BILLING</code> は第6条の任意の解放のために Google Play の購入画面を開くのに使います。<code>BIND_GET_INSTALL_REFERRER_SERVICE</code> は端末内の Google Play アプリに、本ゲームをどのリンクからインストールしたか（第2条のインストール経路）を問い合わせるためだけに使います（バージョン 1.2.1 から）。<code>ACCESS_NETWORK_STATE</code> は Google Play 決済ライブラリが追加する権限で、インターネット接続の有無を確認するだけで、いかなる情報も読み取りません。<code>DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code> は Android サポートライブラリ（AndroidX）が追加するアプリ内部専用の権限で、他のアプリが本ゲームの内部信号を受け取れないようにするためのものであり、お客様の情報とは関係ありません。</td></tr>
     <tr><td>iOS</td><td><strong>なし。</strong>プライバシー利用目的の記述（カメラ・マイク・位置情報・連絡先・写真・トラッキング）を一切宣言していません。</td></tr>
   </tbody>
 </table>
@@ -136,7 +136,7 @@
     <tr><td>2026-09-20</td><td>初版（英語版 2026-08-28 初版・2026-09-20 改定と同一内容）</td></tr>
     <tr><td>2026-09-27</td><td>第2条「プレイ統計」を新設（バージョン 1.1.0 から匿名の分析データを送信・設定でオフ可能・欧州経済領域・英国・スイスでは初期設定オフ）、第3・4・8・9条をそれに合わせて修正、Android の <code>INTERNET</code> 権限を記載</td></tr>
     <tr><td>2026-10-04</td><td>無料版・任意のアプリ内解放（バージョン 1.2.0）に合わせて第6条を修正、第1・3・4条をそれに合わせて修正（端末の解放記録・ストアの決済システム・Android の <code>BILLING</code> 権限）</td></tr>
-    <tr><td>2026-10-09</td><td>第2条の表に「購入イベント」を追加（バージョン 1.2.1 から購入画面の表示・購入結果をプレイ統計として送信 — 金額・決済手段・取引番号は除く）、第6条をそれに合わせて修正。「アプリ・端末情報」にインストール経路を追加、第3条に Android のインストールリファラー権限を記載（バージョン 1.2.1 から）</td></tr>
+    <tr><td>2026-10-09</td><td>第2条の表に「購入イベント」を追加（バージョン 1.2.1 から購入画面の表示・購入結果をプレイ統計として送信 — 金額・決済手段・取引番号は除く）、第6条をそれに合わせて修正。「アプリ・端末情報」にインストール経路を追加、第3条に Android のインストールリファラー権限を記載（バージョン 1.2.1 から）、第3条にこれまで漏れていたライブラリ由来の権限 2 つ（<code>ACCESS_NETWORK_STATE</code>・<code>DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>）を記載</td></tr>
   </tbody>
 </table>
 

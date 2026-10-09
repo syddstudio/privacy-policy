@@ -97,7 +97,7 @@
 <table>
   <thead><tr><th>平台</th><th>要求的權限</th></tr></thead>
   <tbody>
-    <tr><td>Android</td><td><strong><code>INTERNET</code>、<code>VIBRATE</code> 與 <code>com.android.vending.BILLING</code> 與 <code>com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE</code> 四項。</strong><code>INTERNET</code> 僅用於傳送第2條的遊玩統計；<code>VIBRATE</code> 用於觸覺回饋，無法讀取或傳送任何資訊；<code>BILLING</code> 用於為第6條的選購解鎖開啟 Google Play 購買畫面；<code>BIND_GET_INSTALL_REFERRER_SERVICE</code> 僅用於向裝置上的 Google Play 應用程式查詢本遊戲是經由哪個連結安裝（第2條的安裝來源，自 1.2.1 版起）。</td></tr>
+    <tr><td>Android</td><td><strong><code>INTERNET</code>、<code>VIBRATE</code> 與 <code>com.android.vending.BILLING</code>、<code>com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE</code>、<code>android.permission.ACCESS_NETWORK_STATE</code> 與 <code>com.syddstudio.threerealms.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code> 六項。</strong><code>INTERNET</code> 僅用於傳送第2條的遊玩統計；<code>VIBRATE</code> 用於觸覺回饋，無法讀取或傳送任何資訊；<code>BILLING</code> 用於為第6條的選購解鎖開啟 Google Play 購買畫面；<code>BIND_GET_INSTALL_REFERRER_SERVICE</code> 僅用於向裝置上的 Google Play 應用程式查詢本遊戲是經由哪個連結安裝（第2條的安裝來源，自 1.2.1 版起）；<code>ACCESS_NETWORK_STATE</code> 由 Google Play 結帳程式庫加入，僅確認是否有網路連線，不讀取任何資訊；<code>DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code> 是 Android 支援程式庫（AndroidX）加入的應用程式內部專用權限，用於防止其他應用程式接收本遊戲的內部訊號，與您的資料無關。</td></tr>
     <tr><td>iOS</td><td><strong>無。</strong>未宣告任何隱私權用途說明（相機、麥克風、位置、通訊錄、照片或追蹤）。</td></tr>
   </tbody>
 </table>
@@ -136,7 +136,7 @@
     <tr><td>2026-09-20</td><td>初版（內容與英文版 2026-08-28 初版・2026-09-20 修訂相同）</td></tr>
     <tr><td>2026-09-27</td><td>新增第2條「遊玩統計」（自 1.1.0 版起傳送匿名分析資料・可於設定中關閉・歐洲經濟區、英國與瑞士預設關閉），並據此修訂第3、4、8、9條，載明 Android 的 <code>INTERNET</code> 權限</td></tr>
     <tr><td>2026-10-04</td><td>配合免費版與選購 App 內解鎖（1.2.0 版）修訂第6條，並據此修訂第1、3、4條（裝置上的解鎖紀錄、商店付款系統、Android 的 <code>BILLING</code> 權限）</td></tr>
-    <tr><td>2026-10-09</td><td>於第2條表格新增「購買事件」（自 1.2.1 版起將購買畫面開啟與購買結果作為遊玩統計傳送 — 不含金額、付款方式與交易編號），並據此修訂第6條。於「應用程式與裝置資訊」新增安裝來源，並於第3條載明 Android 安裝來源查詢權限（自 1.2.1 版起）</td></tr>
+    <tr><td>2026-10-09</td><td>於第2條表格新增「購買事件」（自 1.2.1 版起將購買畫面開啟與購買結果作為遊玩統計傳送 — 不含金額、付款方式與交易編號），並據此修訂第6條。於「應用程式與裝置資訊」新增安裝來源，並於第3條載明 Android 安裝來源查詢權限（自 1.2.1 版起），以及先前漏列的兩項程式庫合併權限（<code>ACCESS_NETWORK_STATE</code>、<code>DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>）</td></tr>
   </tbody>
 </table>
 
