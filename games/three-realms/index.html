@@ -84,6 +84,7 @@
   <li><strong>Not sent:</strong> name, email, phone number, contacts, photos, precise location, IP address (configured not to be recorded), or your saved games.</li>
   <li><strong>Turning it off:</strong> Settings → "Send play statistics". Transmission stops immediately. In the European Economic Area, the United Kingdom, and Switzerland it is <strong>off by default</strong> and is sent only if you turn it on in Settings.</li>
   <li><strong>Retention and transfer:</strong> The statistics are stored as events on the servers of our processor, PostHog Inc. (United States). The transferred items are the five listed above, the purpose is game-improvement analytics, the transfer happens as soon as the game sends the statistics, and the data is kept until the game's service ends or you request deletion. It is never used for advertising, sold, or handed to third parties. Deletion is described in Section 9.</li>
+  <li><strong>Toss app version:</strong> The version that runs inside the Toss app also sends a few progress moments from these statistics (reaching turns 10, 20, and 30, capturing a city, and winning — only the turn and the chosen faction) to the mini-app analytics tool of Toss (Viva Republica Inc.). An anonymous key that Toss attaches for mini-app usage statistics is recorded with them, and Toss uses it for mini-app exposure and recommendations and for statistics shown to the developer. Turning off "Send play statistics" stops this too.</li>
 </ul>
 
 <h2>3. What the Game Does Not Do</h2>
@@ -106,7 +107,7 @@
 <p>On iOS, haptic feedback requires no permission and does not access any data.</p>
 
 <h2>5. External Links</h2>
-<p>The settings screen can open the app's store page (Google Play or the App Store) so you can leave a review. Selecting it hands the address to the store app or your browser and leaves the game. Those services have their own privacy policies, and we receive nothing from them beyond the aggregate sales and review information the stores show every developer. The version inside the Toss app has no store review item.</p>
+<p>The settings screen can open the app's store page (Google Play or the App Store) so you can leave a review. Selecting it hands the address to the store app or your browser and leaves the game. Those services have their own privacy policies, and we receive nothing from them beyond the aggregate sales and review information the stores show every developer. The version inside the Toss app has no store review item; instead, after you have played for a while, a star-rating and review window provided by Toss may appear. Ratings and reviews you leave are received and handled by Toss, and the developer sees only the totals and review text in the Toss console.</p>
 
 <h2>6. Purchases</h2>
 <p>The game is free to download and play. Additional factions and the Custom Lord mode can be unlocked with optional one-time in-app purchases (no subscriptions, no random items, no consumables). <strong>Payment is handled entirely by Google Play or the Apple App Store</strong> — the developer never sees or receives your card number, billing address, or any other payment credential. From version 1.2.1, the play statistics in Section 2 include <strong>which unlock you bought (product and whether it succeeded)</strong>; turning statistics off stops this too. To open your unlocks, the game only asks the store, on your device, which unlocks your store account owns. Refunds and payment records are governed by the store's own policy.</p>
@@ -121,7 +122,7 @@
 <p>The game is not directed at children and does not knowingly collect personal information from anyone, including children. Because no personally identifying information is collected, including in the play statistics of Section 2, no parental consent mechanism is required.</p>
 
 <h2>8. Sharing with Third Parties</h2>
-<p>We do not sell, share, or transfer personal information to third parties. The play statistics in Section 2 are stored with a service provider that processes data on the developer's behalf (PostHog Inc., United States) and does not use it or pass it on except on the developer's instructions. Beyond that, no data is disclosed to anyone by the game's operation.</p>
+<p>We do not sell, share, or transfer personal information to third parties. The play statistics in Section 2 are stored with a service provider that processes data on the developer's behalf (PostHog Inc., United States) and does not use it or pass it on except on the developer's instructions. The Toss app version also sends the progress moments described in Section 2 to Toss's mini-app analytics tool. Beyond that, no data is disclosed to anyone by the game's operation.</p>
 
 <h2>9. Your Rights</h2>
 <p>All game data such as saved games lives on your device: you can erase it from the settings screen or by uninstalling the game. Play statistics (Section 2) can be switched off in Settings, and to <strong>request deletion</strong> of statistics already sent, contact the address below and include the <code>Install id</code> shown in the email that Settings → "Send feedback" opens. The statistics contain nothing that identifies you, so that value is the only way to locate your records.</p>
@@ -143,10 +144,11 @@
     <tr><td>2026-10-04</td><td>Updated Section 6 for the free version with optional in-app unlocks (version 1.2.0), and Sections 1, 3 and 4 accordingly (unlock record on the device, the store's purchase system, the Android <code>BILLING</code> permission)</td></tr>
     <tr><td>2026-10-09</td><td>Added "Purchase events" to the Section 2 table (from version 1.2.1, opening the purchase screen and the purchase result are sent as play statistics — no price, payment method, or transaction number), updated Section 6 accordingly. Added install source to "App and device information" and the Android install-referrer permission to Section 3 (from version 1.2.1); listed two library-merged permissions previously missing from Section 3 (<code>ACCESS_NETWORK_STATE</code>, <code>DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>)</td></tr>
     <tr><td>2026-10-10</td><td>Updated Sections 1–6 for the Toss app (Apps in Toss) version: Toss mini-app storage, Toss as a platform and install source, game files downloaded from Toss's servers, no permissions in the Toss version, no review item, and payments handled by Toss</td></tr>
+    <tr><td>2026-10-13</td><td>Added that the Toss app version also sends a few progress moments to Toss's mini-app analytics tool (Sections 2 and 8), and the Toss star-rating and review window (Section 5)</td></tr>
   </tbody>
 </table>
 
-<footer>© 2026 Three Realms (SYDD Studio). Last updated: 2026-10-10</footer>
+<footer>© 2026 Three Realms (SYDD Studio). Last updated: 2026-10-13</footer>
 </div>
 </body>
 </html>
