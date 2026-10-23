@@ -43,13 +43,13 @@
 <p class="lang"><a href="ko/">한국어</a> · <a href="ja/">日本語</a> · <a href="zh-Hant/">繁體中文</a></p>
 <header>
   <h1>Privacy Policy — Three Realms</h1>
-  <p class="eff">Effective date: October 19, 2026 (first version: August 28, 2026)</p>
+  <p class="eff">Effective date: October 23, 2026 (first version: August 28, 2026)</p>
 </header>
 
-<p class="lead">Three Realms (삼국천하, the "game") respects your privacy. This policy explains what information the game handles and how. In short, <strong>the game does not collect personal information such as your name, contact details, or location.</strong> It is a single-player game with no accounts and no advertising. The only thing that leaves your device is <strong>anonymous play statistics</strong> (Section 2), which you can turn off in Settings at any time.</p>
+<p class="lead">Three Realms (삼국천하, the "game") respects your privacy. This policy explains what information the game handles and how. In short, <strong>the game does not collect personal information such as your name, contact details, or location.</strong> It is a single-player game with no accounts and no advertising. The only thing that leaves your device automatically is <strong>anonymous play statistics</strong> (Section 2), which you can turn off in Settings at any time; feedback you write is sent only when you choose to send it (Section 11).</p>
 
 <h2>1. Information Stored on Your Device</h2>
-<p>The game saves the following to your device's local storage so that your progress survives between sessions. None of it is transmitted anywhere.</p>
+<p>The game saves the following to your device's local storage so that your progress survives between sessions. None of it is transmitted anywhere, except feedback you choose to send (Section 11).</p>
 <table>
   <thead><tr><th>Data</th><th>Purpose</th></tr></thead>
   <tbody>
@@ -59,10 +59,11 @@
     <tr><td>Custom ruler data</td><td>Store a ruler you created yourself</td></tr>
     <tr><td>Settings</td><td>Sound on/off, music and effect volume, language</td></tr>
     <tr><td>Unlocks</td><td>Remember which optional unlocks you own (a copy — the store keeps the actual purchase record)</td></tr>
+    <tr><td>Feedback draft (from version 1.2.9)</td><td>Keep the feedback you are writing and the reply email you entered, so they are not lost if sending fails (Section 11)</td></tr>
   </tbody>
 </table>
 <ul>
-  <li>This data describes <strong>game progress only</strong>. It contains no name, email address, phone number, location, contacts, photos, or any other information that identifies you.</li>
+  <li>Apart from a reply email address you may enter in the feedback form (Section 11), this data describes <strong>game progress only</strong>. It contains no name, email address, phone number, location, contacts, photos, or any other information that identifies you.</li>
   <li>On mobile the same data is mirrored to the operating system's app preference storage (Android <code>SharedPreferences</code> / iOS <code>UserDefaults</code>) so that a save is not lost if the web view's storage is cleared. This is still local storage on your device.</li>
   <li>The version that runs inside the Toss app (Apps in Toss) also writes the same data to the Toss app's mini-app storage. This is still storage on your device, and it is erased when you clear this game's data in the Toss app or delete the Toss app.</li>
   <li>You can erase it at any time from the game's settings screen, and <strong>uninstalling the game removes all of it.</strong></li>
@@ -93,7 +94,7 @@
 <ul>
   <li><strong>No accounts.</strong> There is no sign-up, no login, and no user profile.</li>
   <li><strong>No advertising.</strong> The game contains no ad SDK and no advertising identifier is read.</li>
-  <li><strong>No tracking.</strong> The game does not read the advertising identifier and does not link you with other companies' data. iOS version 1.2.5 sends events to Google for ad performance measurement (Section 2); from version 1.2.6 it no longer does. Apart from the store's own purchase system (Section 6), internet access is used only to send the play statistics and ad performance measurement described in Section 2. All artwork, music, and sound effects are bundled inside the app and loaded from local files. The version inside the Toss app is downloaded by Toss from Toss's servers, including its artwork and music, and its payments are handled by Toss (Section 6).</li>
+  <li><strong>No tracking.</strong> The game does not read the advertising identifier and does not link you with other companies' data. iOS version 1.2.5 sends events to Google for ad performance measurement (Section 2); from version 1.2.6 it no longer does. Apart from the store's own purchase system (Section 6), internet access is used only to send the play statistics and ad performance measurement described in Section 2, and feedback you choose to send (Section 11). All artwork, music, and sound effects are bundled inside the app and loaded from local files. The version inside the Toss app is downloaded by Toss from Toss's servers, including its artwork and music, and its payments are handled by Toss (Section 6).</li>
   <li><strong>No cross-device sync.</strong> Saves exist only on the device that created them.</li>
 </ul>
 
@@ -101,7 +102,7 @@
 <table>
   <thead><tr><th>Platform</th><th>Permissions requested</th></tr></thead>
   <tbody>
-    <tr><td>Android</td><td><strong><code>INTERNET</code>, <code>VIBRATE</code>, <code>com.android.vending.BILLING</code>, <code>com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE</code>, <code>android.permission.ACCESS_NETWORK_STATE</code> and <code>com.syddstudio.threerealms.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>.</strong> <code>INTERNET</code> is used solely to send the play statistics in Section 2; <code>VIBRATE</code> is for haptic effects and cannot read or send any data; <code>BILLING</code> lets the game open Google Play's purchase screen for the optional unlocks in Section 6; <code>BIND_GET_INSTALL_REFERRER_SERVICE</code> only asks the Google Play app on your device which link the game was installed from (install source in Section 2, from version 1.2.1); <code>ACCESS_NETWORK_STATE</code> is added by the Google Play Billing library and only checks whether an internet connection is available, reading no information; <code>DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code> is an app-internal permission added by the Android support library (AndroidX) that stops other apps from receiving the game's internal signals and has nothing to do with your data.</td></tr>
+    <tr><td>Android</td><td><strong><code>INTERNET</code>, <code>VIBRATE</code>, <code>com.android.vending.BILLING</code>, <code>com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE</code>, <code>android.permission.ACCESS_NETWORK_STATE</code> and <code>com.syddstudio.threerealms.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>.</strong> <code>INTERNET</code> is used solely to send the play statistics in Section 2 and feedback you choose to send (Section 11); <code>VIBRATE</code> is for haptic effects and cannot read or send any data; <code>BILLING</code> lets the game open Google Play's purchase screen for the optional unlocks in Section 6; <code>BIND_GET_INSTALL_REFERRER_SERVICE</code> only asks the Google Play app on your device which link the game was installed from (install source in Section 2, from version 1.2.1); <code>ACCESS_NETWORK_STATE</code> is added by the Google Play Billing library and only checks whether an internet connection is available, reading no information; <code>DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code> is an app-internal permission added by the Android support library (AndroidX) that stops other apps from receiving the game's internal signals and has nothing to do with your data.</td></tr>
     <tr><td>iOS</td><td><strong>None.</strong> The app declares no privacy usage descriptions (no camera, microphone, location, contacts, photos, or tracking).</td></tr>
     <tr><td>Toss app (Apps in Toss)</td><td><strong>None.</strong> The game requests no permissions (camera, location, contacts, or any other) through the Toss app.</td></tr>
   </tbody>
@@ -124,16 +125,25 @@
 <p>The game is not directed at children and does not knowingly collect personal information from anyone, including children. Because no personally identifying information is collected, including in the play statistics of Section 2, no parental consent mechanism is required.</p>
 
 <h2>8. Sharing with Third Parties</h2>
-<p>We do not sell personal information to third parties, and do not share or transfer it except as described below. The play statistics in Section 2 are stored with a service provider that processes data on the developer's behalf (PostHog Inc., United States) and does not use it or pass it on except on the developer's instructions. iOS version 1.2.5 sends the ad performance measurement events in Section 2 to Google (Google LLC, United States — Firebase Analytics), which uses them to measure and optimize the developer's Google Ads campaigns (Google's privacy policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>). The Toss app version also sends the progress moments described in Section 2 to Toss's mini-app analytics tool. Beyond that, no data is disclosed to anyone by the game's operation.</p>
+<p>We do not sell personal information to third parties, and do not share or transfer it except as described below. The play statistics in Section 2 are stored with a service provider that processes data on the developer's behalf (PostHog Inc., United States) and does not use it or pass it on except on the developer's instructions. iOS version 1.2.5 sends the ad performance measurement events in Section 2 to Google (Google LLC, United States — Firebase Analytics), which uses them to measure and optimize the developer's Google Ads campaigns (Google's privacy policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>). The Toss app version also sends the progress moments described in Section 2 to Toss's mini-app analytics tool. Feedback you send (Section 11) is relayed by Cloudflare, Inc. (United States) and delivered to the developer's support inbox hosted by Google (Gmail, United States). Beyond that, no data is disclosed to anyone by the game's operation.</p>
 
 <h2>9. Your Rights</h2>
-<p>All game data such as saved games lives on your device: you can erase it from the settings screen or by uninstalling the game. Play statistics (Section 2) can be switched off in Settings, and to <strong>request deletion</strong> of statistics already sent, contact the address below and include the <code>Install id</code> shown in the email that Settings → "Send feedback" opens. The statistics contain nothing that identifies you, so that value is the only way to locate your records. The ad performance measurement data (Section 2) from iOS version 1.2.5 is not linked to that value and cannot be located individually, but individual events are deleted automatically after 2 months, and user-level data 14 months after the last launch. Turning off "Send play statistics" stops further sending.</p>
+<p>All game data such as saved games lives on your device: you can erase it from the settings screen or by uninstalling the game. Play statistics (Section 2) can be switched off in Settings, and to <strong>request deletion</strong> of statistics already sent, contact the address below and include the <code>Install id</code> shown under "Sent along" in Settings → "Send feedback" (in versions before 1.2.9, in the email it opens). The statistics contain nothing that identifies you, so that value is the only way to locate your records. The ad performance measurement data (Section 2) from iOS version 1.2.5 is not linked to that value and cannot be located individually, but individual events are deleted automatically after 2 months, and user-level data 14 months after the last launch. Turning off "Send play statistics" stops further sending.</p>
 <p>If you are in the European Economic Area or the United Kingdom, you have the right to lodge a complaint with your local data protection authority. If you are a California resident, note that we do not sell or share personal information as those terms are defined by the CCPA/CPRA. Any questions about your privacy rights can be sent to the address below.</p>
 
 <h2>10. Changes to This Policy</h2>
 <p>This policy may be revised when necessary. Material changes will be announced on this page, and the revision history below records every version.</p>
 
-<h2>11. Contact</h2>
+<h2>11. Feedback You Send</h2>
+<p>From version 1.2.9, "Send feedback" in Settings (and "Bugs &amp; requests" in the update history) opens a form inside the game. <strong>Nothing is sent until you tap Send.</strong> When you do, the following is sent:</p>
+<ul>
+  <li>what you write, and the type you pick (bug, idea, or other);</li>
+  <li>an email address for a reply, <strong>only if you enter one</strong>;</li>
+  <li>the information shown under "Sent along" in the form: device model, OS version, game version, device locale and game language, the <code>Install id</code>, whether play statistics are on, a few recent error lines, and a short summary of your current game (faction, turn, and the last few chronicle lines).</li>
+</ul>
+<p>It passes through the developer's relay server on Cloudflare (Cloudflare, Inc., United States), which turns it into one email to the developer's support inbox (Gmail, Google LLC, United States) and keeps no copy. Your IP address is used only to count requests for up to one hour to stop abuse, and is not kept with your message. The email is used only to read your feedback and reply to you, and we delete it if you ask at the address below. While you write, your text and reply address are saved on your device only, so nothing is lost if sending fails; the text is cleared once it is sent, and the reply address stays on the device so you need not type it again (clear it with the × in the form). If you choose "Send with a mail app" instead, your own mail app and email provider send the message. Because you send feedback yourself, it works regardless of the "Send play statistics" setting.</p>
+
+<h2>12. Contact</h2>
 <p>Privacy inquiries: <strong><a href="mailto:support@syddstudio.com">support@syddstudio.com</a></strong></p>
 
 <h2>Revision History</h2>
@@ -149,6 +159,7 @@
     <tr><td>2026-10-13</td><td>Added that the Toss app version also sends a few progress moments to Toss's mini-app analytics tool (Sections 2 and 8), and the Toss star-rating and review window (Section 5)</td></tr>
     <tr><td>2026-10-16</td><td>Added ad performance measurement in the iOS version (Google Firebase Analytics, from version 1.2.5): Section 2 table and retention and transfer, the tracking statement in Section 3, sharing with third parties in Section 8, and deletion requests in Section 9</td></tr>
     <tr><td>2026-10-19</td><td>Removed ad performance measurement (Google Firebase Analytics) from iOS version 1.2.6: Sections 2, 3, 8, and 9 now state that it is sent only by version 1.2.5</td></tr>
+    <tr><td>2026-10-23</td><td>Added Section 11 "Feedback You Send" (in-game feedback form from version 1.2.9: what is sent, the Cloudflare relay and support inbox, the optional reply address) and adjusted the summary and Sections 1, 3, 4, 8 and 9 accordingly; Contact is now Section 12</td></tr>
   </tbody>
 </table>
 
